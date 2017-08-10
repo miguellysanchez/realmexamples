@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.realmexample.part4.Part4Activity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_part4_recyclerview_company"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5" />
+
+    <EditText
+        android:id="@+id/activity_part4_edittext_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getAllEmployees"
+        android:text="GET ALL EMPLOYEES"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getAllProjects"
+        android:text="GET ALL PROJECTS"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getAllTeams"
+        android:text="GET ALL TEAMS"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getEmployeesWithProject"
+        android:text="GET ALL EMPLOYEES WITH PROJECT X"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getEmployeesWithProjectInverse"
+        android:text="GET ALL EMPLOYEES WITH PROJECT X (inverse)"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getEmployeesWithTeam"
+        android:text="GET ALL EMPLOYEES WITH TEAM X "
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getProjectsWithContributor"
+        android:text="GET ALL PROJECTS WITH CONTRIBUTOR X"
+        android:textSize="10dp" />
+</LinearLayout>

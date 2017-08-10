@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccffff"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAVORITE CAT:" />
+
+        <TextView
+            android:id="@+id/activity_part3_button_textview_fav_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_part3_recyclerview_cats"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.3" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/activity_part3_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cat's name"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/activity_part3_edittext_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cat's color"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/activity_part3_edittext_num_stripes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cat's number of stripes"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/activity_part3_button_add_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="part3AddCat"
+            android:text="ADD OR UPDATE CAT" />
+
+        <Button
+            android:id="@+id/activity_part3_button_favorite_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="part3SetFavoriteCat"
+            android:text="FAVORITE LAST CAT" />
+
+        <Button
+            android:id="@+id/activity_part3_button_edit_last_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="part3RemoveLastCat"
+            android:text="DELETE LAST CAT" />
+
+        <Button
+            android:id="@+id/activity_part3_button_reset_realm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="part3ResetRealm"
+            android:text="!!! RESET REALM !!!" />
+    </LinearLayout>
+</LinearLayout>

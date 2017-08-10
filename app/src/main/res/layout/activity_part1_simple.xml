@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_part1_textview_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="---" />
+
+    <Button
+        android:id="@+id/activity_part1_button_randomize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="part1Randomize"
+        android:text="RANDOMIZE" />
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/activity_part1_button_reset_realm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="part1ResetRealm"
+        android:text="!!! RESET REALM !!!" />
+</LinearLayout>
